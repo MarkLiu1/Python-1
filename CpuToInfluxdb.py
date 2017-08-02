@@ -1,4 +1,4 @@
-import psutil
+﻿import psutil
 import os
 from influxdb import InfluxDBClient
 import time,math,random
@@ -11,7 +11,7 @@ p1=psutil.Process(os.getpid())
 from influxdb import InfluxDBClient
 import time,math,random
 while True:
-    a = psutil.virtual_memory().percent  #内存占用率
+    a = psutil.virtual_memory().percent  #内存占用率--
 
     b = psutil.cpu_percent(interval=1.0) #cpu占用率
 
